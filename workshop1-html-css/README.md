@@ -140,6 +140,4 @@ ID's are used for talking about one `<div>` specifically, and classes are used t
 
 Go ahead and delete your current div in your code and copy and paste this one in. 
 
-![Image of link code](https://raw.githubusercontent.com/hackatbrown/workshops/master/workshop1-html-css/screenshots/Screen%20Shot%202014-09-24%20at%202.31.34%20AM.png)
-
 Now, how do we select these in our CSS document?
