@@ -34,6 +34,8 @@ Anyway, enough with the boring stuff of how a file opens, you just made a websit
 
 Delete `Hello, world!`, and on the first line replace it with `<!DOCTYPE html>`. Here we're letting the browser know that what's coming next is HTML. 
 
+![Image of doctype]("path")
+
 Now for the HTML
 
 Think of HTML as a way of labeling things. It's like if I drew a picture with no colors, but labeled all the parts with (Green) or (Red) so that you could color it in correctly for me. In HTML we calls these labels tags and HTML works from most general down to more specific tags, nesting them inside eachother. 
@@ -73,7 +75,7 @@ Double click your file in your folder, revel in the glory.
 Congrats! You've reach checkpoint 1! Copy and past what's in `checkPoint1.html` into your own file if you didn't get all that. 
 
 ------
-
+#### Section 2
 What's that? Site looks a little lame? Well just you wait. It's time to add some style. 
 
 Open up a new window in Sublime and save it as `index.css` in your same HTML/CSS folder. CSS stands for Cascading Style Sheet, but we'll explain that later. 
@@ -108,4 +110,26 @@ Things in the head don't get rendered visibly on the page (except for the title!
 
 ![Image of link code]("path")
 
-Now let's refresh the page (or double click on index.html again). Walah! 
+Now let's refresh the page (or double click on index.html again). Killin it!
+
+Okay, cool. So now we can style things in index.html by writing css in index.css
+
+Let's change our background color from black to the color we're going to use for the rest of the time: ` #ccf5f` (<-- that's a color written in hexidecimal, which is a fancy way of writing colors with character, click [here](http://www.w3schools.com/tags/ref_colorpicker.asp) to see a whole chart of 'em!).
+
+index.css should now look like: 
+```
+body {
+  background-color: #ccf5f;
+  color: white;
+}
+```
+
+Okay, now remember how I was saying that HTML is basically just a bunch of tags nested in each other? It doesn't stop with `<head>` and `<body>`, but there are tags for links, images, videos, paragraphs, headings, you name it! There are lots of great resources for learning more about these online (like [codecademy!](http://www.codecademy.com/tracks/web)), so we're only going to cover a couple of them here.
+
+Here, we're going to use `<div>` tags, which are basically used as a way of dividing up and styling things on your page. It'll make a lot more sense in a second, I promise!
+
+Let's delete `Hello, world!` for the time being and add a `<div>` in it's place. Remember, it'll need an open and a close tag, like: `<div> </div>`
+
+![Image of divs code]("path")
+
+But let's think about how we're going to style these. Remember how we used `body` in the css before to refer to `<body>`? Well that worked well for body, because there's only one. But what if we have lots of `<div>`s and we want to differentiate? Enter ID's and Classes. 
