@@ -12,7 +12,7 @@ Create a new folder on your desktop called "HTML/CSS"
 
 Open up Sublime, go to the File dropdown in the upper left and click "Save" (or press cmnd+s, just like any other old file). I know we haven't written anything to save yet. 
 
-Save your file as `index.html` and put in your brand spankin new HTML/CSS folder.
+Save your file as `index.html` and put it in your brand spankin new HTML/CSS folder.
 
 ![Screenshot of saving](http://i59.tinypic.com/33cu45i.png)
 
@@ -22,13 +22,13 @@ Now, in your sublime file, type `Hello, world!` and save.
 
 ![Image of Hello World](https://raw.githubusercontent.com/hackatbrown/workshops/master/workshop1-html-css/screenshots/Screen%20Shot%202014-09-24%20at%2012.25.56%20AM.png)
 
-Now, open up your HTML/CSS folder so you can see your `index.html` file and double click it. It should open your web browser and display this page.  
+Now, open up your HTML/CSS folder so you can see your `index.html` file and double click on it. It should open your web browser and display this page.  
 
 ![Image of Hello World online](https://raw.githubusercontent.com/hackatbrown/workshops/master/workshop1-html-css/screenshots/Screen%20Shot%202014-09-23%20at%2011.35.10%20PM.png)
 
 Magic! You're making websites already.
 
-What just happened is that your computers default way of opening a file that ends in .html is in a web brower. It's like when you click a file that ends in .doc and Word or Pages opens. This also means that when you later go back to edit index.html, you'll have to right click on it and choose Sublime to open it with, otherwise you'll just see it in the browser.
+What just happened is that your computer's default way of opening a file that ends in `.html` is in a web brower. It's like when you click a file that ends in `.doc` and Word or Pages opens. This also means that when you later go back to edit `index.html`, you'll have to right click on it and choose Sublime to open it with, otherwise you'll just see it in the browser.
 
 Anyway, enough with the boring stuff of how a file opens, you just made a website! Browsers are pretty easy to get along with and will display pretty much whatever you throw at them, hence your text showing up, but that'll only get us so far. We're gonna need to learn how to speak the specific language the browser understands, HTML. 
 
@@ -38,9 +38,9 @@ Delete `Hello, world!`, and on the first line replace it with `<!DOCTYPE html>`.
 
 Now for the HTML
 
-Think of HTML as a way of labeling things. It's like if I drew a picture with no colors, but labeled all the parts with (Green) or (Red) so that you could color it in correctly for me. In HTML we calls these labels tags and HTML works from most general down to more specific tags, nesting them inside eachother. 
+Think of HTML as a way of labeling things. It's like if I drew a picture with no colors or text, but labeled all the parts with (Green) or (Red) so that you could color it in correctly for me. In HTML we calls these labels tags and HTML works from most general down to more specific tags, nesting them inside eachother. 
 
-On line 2 write `<html>`. Each tag needs a closing tag, so online 3 write `</html>`. This general format of opening tags starting with `<` and closing tags starting with `<\` will hold for pretty much all of HTML.
+The outtermost tags we want are the html tags, so on line 2 write `<html>`. Each tag needs a closing tag, so online 3 write `</html>`. This general format of opening tags starting with `<` and closing tags starting with `<\` will hold for pretty much all of HTML.
 
 ![Image of html tags](https://raw.githubusercontent.com/hackatbrown/workshops/master/workshop1-html-css/screenshots/Screen%20Shot%202014-09-23%20at%2011.48.54%20PM.png)
 
