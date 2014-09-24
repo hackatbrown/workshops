@@ -132,4 +132,12 @@ Let's delete `Hello, world!` for the time being and add a `<div>` in it's place.
 
 ![Image of divs code]("path")
 
-But let's think about how we're going to style these. Remember how we used `body` in the css before to refer to `<body>`? Well that worked well for body, because there's only one. But what if we have lots of `<div>`s and we want to differentiate? Enter ID's and Classes. 
+But let's think about how we're going to style these. Remember how we used `body` in the css before to refer to `<body></body>`? Well that worked well for body, because there's only one. But what if we have lots of `<div>`s and we want to differentiate? Enter ID's and Classes. 
+
+ID's are used for talking about one `<div>` specifically, and classes are used to talk about all the `<div>`s that have that class. Here's how it looks:
+
+`<div id="divOne" class="bunchOfDivs"></div>`
+
+Go ahead and delete your current div in your code and copy and paste this one in. 
+
+Now, how do we select these in our CSS document?
