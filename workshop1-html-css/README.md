@@ -22,13 +22,13 @@ Now, in your sublime file, type `Hello, world!` and save.
 
 ![Image of Hello World]("path")
 
-Now, open up your HTML/CSS folder so you can see your `index.html` file and double click it. It should open your web browers and display this page.  
+Now, open up your HTML/CSS folder so you can see your `index.html` file and double click it. It should open your web browser and display this page.  
 
 ![Image of Hello World online]("path")
 
 Magic! You're making websites already.
 
-What just happened is that your computers default way of opening a file that ends in .html is in a web brower. It's like when you click a file that ends in .doc and Word or Pages opens. This also means that when you later go back to edit index.html, you'll have to right click on it and choose Sublime to open it with, otherwise you'll just see it in the browers.
+What just happened is that your computers default way of opening a file that ends in .html is in a web brower. It's like when you click a file that ends in .doc and Word or Pages opens. This also means that when you later go back to edit index.html, you'll have to right click on it and choose Sublime to open it with, otherwise you'll just see it in the browser.
 
 Anyway, enough with the boring stuff of how a file opens, you just made a website! Browsers are pretty easy to get along with and will display pretty much whatever you throw at them, hence your text showing up, but that'll only get us so far. We're gonna need to learn how to speak the specific language the browser understands, HTML. 
 
@@ -74,3 +74,38 @@ Congrats! You've reach checkpoint 1! Copy and past what's in `checkPoint1.html` 
 
 ------
 
+What's that? Site looks a little lame? Well just you wait. It's time to add some style. 
+
+Open up a new window in Sublime and save it as `index.css` in your same HTML/CSS folder. CSS stands for Cascading Style Sheet, but we'll explain that later. 
+
+![Image of saving css]("path")
+
+CSS allows you to select certain things in the HTML and style them. For example, if I wanted to select `<body>` and make it's background-color black, I'd write:
+```
+body {
+  background-color: black;
+}
+```
+But right now my text is black, too. So beneah `background-color:` let's add `color: white;`
+
+```
+body {
+  background-color: black;
+  color: white;
+}
+```
+
+![Image of code in the file]("path")
+
+Go ahead and copy and paste that code into your `index.css` and double click your `index.html` file to check it out in the browser. 
+
+But wait, it all still looks the same. That's because we haven't told the index.html where to look for its style yet. 
+
+Switch back to looking at `index.html` and add this in between the `head` tags beneath `title`:
+`<link type='text/css' rel='stylesheet' href='index.css'>`
+
+Things in the head don't get rendered visibly on the page (except for the title!) but rather tell the page where to long for its dependencies (things that it depends on). In this case we're saying, "Hey, look at this file, it's type is text/css (type), it's relation to me is a stylesheet (rel), and you can find it here (href)."
+
+![Image of link code]("path")
+
+Now let's refresh the page (or double click on index.html again). Walah! 
