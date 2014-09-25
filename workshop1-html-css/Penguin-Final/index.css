@@ -1,0 +1,78 @@
+
+/*This style  gives the body element in our HTML a cool blue background color*/
+body {
+    background-color: #ccf5f5;
+}
+
+/*This styles the div in the HTML that contains and centers our penguin game*/
+#gameholder {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*This styles the title div in or HTML*/
+#title {
+    width: 600px;
+    height: 150px;
+    /*This property embeds an image into the background of our div*/
+    background-image:url('media/penguin_title.png');
+}
+
+/*This pseudo class is applied when the mouse hovers over the 1st penguin div*/
+
+/*This pseudo class is applied when our 1st penguin div is clicked by the mouse button*/
+
+
+/*These are our penguin styles*/
+.penguin {
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-image:url('media/mound_1.png');
+}
+
+.penguin:hover {
+    background-image:url('media/mound_1_hover.png');
+    cursor: pointer;
+}
+
+.penguin1:active {
+    background-image:url('media/penguin_1.png');
+}
+
+.penguin2:active {
+    background-image:url('media/penguin_2.png');
+}
+
+.penguin3:active {
+    background-image:url('media/penguin_3.png');
+}
+
+
+
+
+
+/*These are the styles for our yeti div.*/
+
+.yeti:hover {
+    background-image:url('media/mound_1_hover.png');
+    cursor: pointer;
+}
+
+.yeti:active {
+    background-image:url('media/yeti.png');
+}
+
+.yeti {
+    width: 200px;
+    height: 200px;
+    float: left;
+    background-image:url('media/mound_1.png');
+}
+
+
+
+
+
+
