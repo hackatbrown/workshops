@@ -12,26 +12,13 @@ body {
 .penguin {
   width: 200px;
   height: 200px;
-  background-image:url("media/mound_1.png");
-  float: left;
+  background-image:url("media/mound_1.png")
 }
 
 .penguin:hover {
   background-image:url("media/mound_1_hover.png");
 }
 
-.penguin1:active {
+.penguin:active {
   background-image:url("media/penguin_1.png");
-}
-
-.penguin2:active {
-  background-image:url("media/penguin_2.png");
-}
-
-.penguin3:active {
-  background-image:url("media/penguin_3.png");
-}
-
-.yeti:active {
-  background-image:url("media/yeti.png");
 }

@@ -1,0 +1,25 @@
+body {
+  background-color: #ccf5f5;
+  color: white;
+}
+
+#thisDiv {
+  background-color: orange;
+}
+
+#secondDiv {
+  background-color: purple;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  float: left;
+}
+
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
