@@ -119,7 +119,7 @@ Let's change our background color from black to the color we're going to use for
 index.css should now look like: 
 ```
 body {
-  background-color: #ccf5f;
+  background-color: #ccf5f5;
   color: white;
 }
 ```
