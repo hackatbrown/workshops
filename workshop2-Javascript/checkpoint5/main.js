@@ -4,13 +4,16 @@ $(document).ready( function() {
 	var score = 0;
 	$('.penguin').on('click', function() {
 		score = score + 1;
-		$('#count').text("Score: " + score)
+		$('#count').text("Score: " + score);
 	});
 
 	/*selecting a random place to put the yeti*/
-	var divs = $('.penguin');
-	var index = Math.floor((Math.random() * 8));
-	$(divs[index]).attr('class', 'penguin yeti');
+	function makeYeti() {
+		var divs = $('.penguin');
+		var index = Math.floor((Math.random() * 8));
+		$(divs[index]).attr('class', 'penguin yeti');
+	};
+	makeYeti();
 
 	/* when yeti is clicked, the game board
 		disappears and done is shown
