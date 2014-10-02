@@ -42,7 +42,7 @@ body {
   /* colors and font*/
   color: grey;
   font-family: monospace;
-  font-size: 5em;
+  font-size: 65px;
 }
 
 #done {
@@ -50,16 +50,16 @@ body {
     position: fixed;
     text-align: center;
     top: 40%;
-    margin-top: -90px;
+    margin-top: -115px;
     left: 50%;
-    margin-left: -210px;
+    margin-left: -259px;
 }
 
 #done>h3 {
-    font-size: 3em;
+    font-size: 48px;
 }
 
 #done>h4 {
-    font-size: 2em;
+    font-size: 32px;
 }
 
