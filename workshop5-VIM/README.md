@@ -1,5 +1,5 @@
 ###Vim workshop
-
+______
 ####Two to three minute demo of cool VIM stuff
 (not sure if this needs to be in the README, but you can link to cool stuff if what you're demoing is online?)
 
