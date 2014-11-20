@@ -1,0 +1,65 @@
+body {
+  background-color: #ccf5f5;
+}
+
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+.penguin {
+  width: 200px;
+  height: 200px;
+  background-image:url("media/mound_1.png");
+  float: left;
+}
+
+.penguin:hover {
+  background-image:url("media/mound_1_hover.png");
+}
+
+.penguin1:active {
+  background-image:url("media/penguin_1.png");
+}
+
+.penguin2:active {
+  background-image:url("media/penguin_2.png");
+}
+
+.penguin3:active {
+  background-image:url("media/penguin_3.png");
+}
+
+.yeti:active {
+  background-image:url("media/yeti.png");
+}
+
+#count {
+  /* positioning */
+  position: fixed;
+
+  /* colors and font*/
+  color: grey;
+  font-family: monospace;
+  font-size: 65px;
+}
+
+#done {
+    font-family: monospace;
+    position: fixed;
+    text-align: center;
+    top: 40%;
+    margin-top: -115px;
+    left: 50%;
+    margin-left: -259px;
+}
+
+#done>h3 {
+    font-size: 48px;
+}
+
+#done>h4 {
+    font-size: 32px;
+}
+

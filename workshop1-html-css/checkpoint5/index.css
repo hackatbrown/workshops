@@ -1,0 +1,24 @@
+body {
+  background-color: #ccf5f5;
+  color: white;
+}
+
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+.penguin {
+  width: 200px;
+  height: 200px;
+  background-image:url("media/mound_1.png")
+}
+
+.penguin:hover {
+  background-image:url("media/mound_1_hover.png");
+}
+
+.penguin:active {
+  background-image:url("media/penguin_1.png");
+}
