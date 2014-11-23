@@ -1,5 +1,4 @@
 # Vim Workshop
----
 
 Hello! Welcome to the Vim Workshop! Let's get started.
 
