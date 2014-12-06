@@ -1,0 +1,26 @@
+{
+  "name": "llo",
+  "version": "0.0.0",
+  "description": "llo ===",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GabeLoins/llo.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/GabeLoins/llo/issues"
+  },
+  "dependencies": {
+    "mongoose": "~3.8.19",
+    "express": "~4.10.2",
+    "ejs": "~1.0.0",
+    "body-parser": "~1.9.x",
+    "underscore": "~1.7.x"
+  }
+}
