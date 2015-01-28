@@ -1,4 +1,4 @@
-(ns clojure-getting-started.web-test
+(ns clojure-webapp-example.web-test
   (:require [clojure.test :refer :all]
             [clojure-getting-started.web :refer :all]))
 
