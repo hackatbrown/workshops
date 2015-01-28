@@ -2,6 +2,7 @@
   (:require [compojure.core :refer [defroutes GET POST]]
             [compojure.handler :refer [site]]
             [compojure.route :as route]
+            [environ.core :refer [env]]
             [ring.util.response :refer [resource-response response]]
             [ring.middleware.json :as middleware]
             [ring.adapter.jetty :as jetty]))
@@ -9,7 +10,7 @@
 (defn- example
   "example: list of ints -> list of ints
   I/P: alist, list of ints
-  O/P: list of ints, aList all items + 1, filtered > 5"
+  O/P: list of ints, aList all items + 1, filtered > 2"
   [alist]
   (let [newList (map #(+ 1 %) alist)]
     (->> newList
@@ -51,5 +52,6 @@
   (doc on jetty/run-jetty http://ring-clojure.github.io/ring/ring.adapter.jetty.html)
   Our handler is defined by calling site on our app, which wraps our routes. Site does a few things for us like
   putting HTTP requests into an easily accessibly format, doc http://weavejester.github.io/compojure/compojure.handler.html#var-site"
-  []
-  (jetty/run-jetty (site #'app) {:port 5000 :join? false}))
+  [& [port]]
+  (let [port (Integer. (or port (env :port) 5000))]
+    (jetty/run-jetty (site #'app) {:port port :join? false})))
