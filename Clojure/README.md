@@ -4,6 +4,6 @@ Welcome to the Clojure party. As you might have guessed, start is where we're st
 
 [Ring Documentation](http://ring-clojure.github.io/ring/index.html), which we will use a lot
 
-[Compojure](https://github.com/weavejester/compojure/wiki), which sits on top of Ring
+[Compojure](https://github.com/weavejester/compojure/wiki), which is a wrapper for Ring
 
 [Heroku Clojure docs](https://devcenter.heroku.com/categories/clojure) (great tutorials!)
