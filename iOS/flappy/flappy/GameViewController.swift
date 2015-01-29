@@ -2,8 +2,8 @@
 //  GameViewController.swift
 //  flappy
 //
-//  Created by Valentin Perez on 1/28/15.
-//  Copyright (c) 2015 Valpe Technologies LLC. All rights reserved.
+//  Created by Justin, Nate, and Valentin on 1/28/15.
+//  Copyright (c) 2015 Hack@Brown Workshops. All rights reserved.
 //
 
 import UIKit

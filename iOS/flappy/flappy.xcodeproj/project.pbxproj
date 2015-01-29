@@ -449,6 +449,7 @@
 				59293DE51A79E73B00ADC872 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59293DE61A79E73B00ADC872 /* Build configuration list for PBXNativeTarget "flappyTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +458,7 @@
 				59293DE81A79E73B00ADC872 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
