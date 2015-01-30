@@ -45,4 +45,6 @@ Run the project now to see the default app that generates spaceships at every cl
 
 ###Our Own Flappy
 
-Now that we have the project open, let's program our own game. All files are located in the <code>flappy</code> folder with amazing comments that will guide you through the code! Start by following along the <code>GameScene.swift</code> file. As implied by the title of the file, this is where the code for the game scene will happen.
+Now that we have the project open, let's program our own game. All files are located in the <code>flappy</code> folder with amazing comments that will guide you through the code!
+
+Start by following along the <code>GameScene.swift</code> file. As implied by the title of the file, this is where the code for the game scene will happen. After you understand what's going on, make sure to take a look at all the other nicely commented files!
