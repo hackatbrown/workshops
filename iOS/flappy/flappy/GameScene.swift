@@ -69,6 +69,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         self.addChild(labelHolder)
         
+        
+        
+        
         scoreLabel.fontName = "Helvetica"
         scoreLabel.fontSize = 60
         scoreLabel.text = "0"
@@ -166,6 +169,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         //obstacles for our flappy bird.
         var timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: Selector("makePipes"), userInfo: nil, repeats: true)
         
+        var test = SKSpriteNode(imageNamed: "brownBear.png")
+        test.anchorPoint = CGPoint(x: 0, y: 1)
+        test.setScale(100/test.frame.size.width)
+        test.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))
+        self.addChild(test)
+        
     }
     
     func makeBackground() {
@@ -179,16 +188,20 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         var replacebg = SKAction.moveByX(bgTexture.size().width, y: 0, duration: 0)
         var movebgForever = SKAction.repeatActionForever(SKAction.sequence([movebg, replacebg]))
         
-        for var i:CGFloat=0; i<3; i++ {
-            
+        //Notes: 
+        //Render two backgrounds and repeatedly rush them back to the their original positions
+        //CHANGE ANCHOR POINT!!!
+        //  [(0,1)   (.5, 1) (1,1) ]
+        //  [(0,.5)  (.5,.5) (1,.5)]
+        //  [(0,0)   (.5, 0) (1,0) ]
+        for var i:CGFloat = 0; i<2; i++ {
             bg = SKSpriteNode(texture: bgTexture)
-            bg.position = CGPoint(x: bgTexture.size().width/2 + bgTexture.size().width * i, y: CGRectGetMidY(self.frame))
+            bg.anchorPoint = CGPoint(x: 0, y: 1)
+            bg.position = CGPoint(x: i*bgTexture.size().width, y: self.frame.size.height)
             bg.size.height = self.frame.height
             bg.runAction(movebgForever)
             movingObjects.addChild(bg)
         }
-        
-        
     }
     
     /**
@@ -213,7 +226,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             var removePipes = SKAction.removeFromParent()
             
             var moveAndRemovePipes = SKAction.sequence([movePipes, removePipes])
-            
+            //note: in this section we have not updated the image anchor point, so we have to perform a bunch of Mid() calls
             var pipe1Texture = SKTexture(imageNamed: "pipe1.png")
             var pipe1 = SKSpriteNode(texture: pipe1Texture)
             pipe1.position = CGPoint(x: CGRectGetMidX(self.frame) + self.frame.size.width, y: CGRectGetMidY(self.frame) + pipe1.size.height / 2 + gapHeight / 2 + pipeOffset)
@@ -257,7 +270,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         //For instance, say that if the second bit in a number is 1, it means that our sprite is a super bear.
         //
-        // We take our sprite's bitmask (unique number) and check it against a reference number that ONLY has the
+        // We take our sprite's bitmask (some integral number) and check it against a reference number that ONLY has the
         // second bit set. One way we might arbitrarily check to see if this bit is set is to walk through each bit
         // of the sprite's bitmask, and see if the corresponding bit is set in the reference number. If both are set,
         // we can set the bit in the output.
@@ -275,6 +288,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             score++
             
+            //Explain inline variables in strings
             scoreLabel.text = "\(score)"
     
         } else if (!gameOver){
@@ -295,10 +309,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         if (!gameOver) {
             
+            // Make the bird flap!
             bird.physicsBody!.velocity = CGVectorMake(0, 0)
             bird.physicsBody!.applyImpulse(CGVectorMake(0, 100))
             
         } else {
+            
+            // Restart the game.
             
             score = 0
             scoreLabel.text = "0"
